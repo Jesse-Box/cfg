@@ -75,7 +75,20 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+
+# Set fzf installation directory path
+# export FZF_BASE=/path/to/fzf/install/dir
+
+# Uncomment to set the FZF_DEFAULT_COMMAND
+# export FZF_DEFAULT_COMMAND='<your fzf default commmand>'
+
+# Uncomment the following line to disable fuzzy completion
+# DISABLE_FZF_AUTO_COMPLETION="true"
+
+# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
+# DISABLE_FZF_KEY_BINDINGS="true"
+#
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
