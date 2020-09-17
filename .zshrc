@@ -123,3 +123,4 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias config='/usr/bin/git --git-dir=/Users/jessebox/.cfg/ --work-tree=/Users/jessebox'
+export FZF_DEFAULT_OPS="--extended"
