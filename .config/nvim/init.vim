@@ -1,6 +1,6 @@
-call plug#begin("~/.vim/plugged")
+call plug#begin("~/.config/nvim/plugged")
 
-Plug 'christianchiarulli/onedark.vim' "One Dark
+Plug 'joshdick/onedark.vim' "One Dark
 Plug 'vim-airline/vim-airline'    " Vim powerline
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Fuzzy Finder
@@ -13,32 +13,17 @@ Plug 'pangloss/vim-javascript'    " JS support
 Plug 'leafgarland/typescript-vim' " TS syntax
 Plug 'peitalin/vim-jsx-typescript' " TSX syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JSX syntax
-Plug 'jparise/vim-graphql'        " GraphQL syntax
-Plug 'styled-components/vim-styled-components' " Styled Components syntax
 
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
 
 call plug#end()"Config Section
 
-
 " _PLUGIN CONFIGURATION_
 
 " Theme Config
-set termguicolors
-
-if (has("autocmd"))
-  augroup colorextend
-    autocmd!
-    " Make `Function`s bold in GUI mode
-    autocmd ColorScheme * call onedark#extend_highlight("Function", { "gui": "bold" })
-    " Override the `Statement` foreground color in 256-color mode
-    autocmd ColorScheme * call onedark#extend_highlight("Statement", { "fg": { "cterm": 128 } })
-    " Override the `Identifier` background color in GUI mode
-    autocmd ColorScheme * call onedark#extend_highlight("Identifier", { "bg": { "gui": "#333333" } })
-  augroup END
-endif
 
 syntax on
+set termguicolors
 colorscheme onedark
 
 " Airline Config
