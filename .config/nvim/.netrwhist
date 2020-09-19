@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/Users/jessebox/.config/nvim/plugged/onedark.vim'
-let g:netrw_dirhist_2='/Users/jessebox/.vscode'
-let g:netrw_dirhist_1='/Users/jessebox/GitHub/my-website'
