@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Intellisense and Syntax Highlighting
 
+Plug 'townk/vim-autoclose'
 Plug 'pangloss/vim-javascript'    " JS support
 Plug 'leafgarland/typescript-vim' " TS syntax
 Plug 'peitalin/vim-jsx-typescript' " TSX syntax
