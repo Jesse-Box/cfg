@@ -73,7 +73,7 @@ let g:coc_global_extensions = [
 " Tool tip documentation and diagnostics 
 nnoremap <silent> K :call CocAction('doHover')<CR>
 function! ShowDocIfNoDiagnostic(timer_id)
-  if (coc#util#has_float() == 0)
+  if (coc#float#has_float() == 0)
     silent call CocActionAsync('doHover')
   endif
 endfunction
