@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
 # DISABLE_FZF_KEY_BINDINGS="true"
 #
-plugins=(git fzf)
+plugins=(git fzf npm gatsby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,4 +123,20 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias config='/usr/bin/git --git-dir=/Users/jessebox/.cfg/ --work-tree=/Users/jessebox'
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
 export FZF_DEFAULT_OPS="--extended"
+export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
