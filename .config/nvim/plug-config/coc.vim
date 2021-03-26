@@ -3,6 +3,7 @@ let g:coc_global_extensions = [
 \ 'coc-css',
 \ 'coc-html',
 \ 'coc-tsserver',
+\ 'coc-flow',
 \ 'coc-eslint',
 \ 'coc-prettier',
 \ 'coc-explorer',
