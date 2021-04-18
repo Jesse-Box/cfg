@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias config="/usr/bin/git --git-dir=/Users/$USER/.cfg/ --work-tree=/Users/$USER"
+alias config="/usr/bin/git --git-dir=/$HOME/.cfg/ --work-tree=/$HOME"
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
