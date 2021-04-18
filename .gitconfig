@@ -17,3 +17,7 @@
 # automatically launch merge tool without displaying a prompt
 [mergetool]
   prompt = false
+
+[credential "https://github.com"]
+        helper =
+        helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/1.8.1/bin/gh auth git-credential
