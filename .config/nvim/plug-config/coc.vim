@@ -1,6 +1,7 @@
 let g:coc_global_extensions = [
 \ 'coc-emmet',
 \ 'coc-css',
+\ 'coc-tailwindcss',
 \ 'coc-html',
 \ 'coc-tsserver',
 \ 'coc-flow',
