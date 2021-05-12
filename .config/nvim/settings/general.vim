@@ -3,7 +3,8 @@
 let mapleader=" "         " Maps leader key to spacebar
 
 " Interface
-set relativenumber        " Hybrid line number
+set number relativenumber " Hybrid line number
+set nu rnu
 set nowrap                " Display long lines as just one line
 
 " Format
