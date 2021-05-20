@@ -1,6 +1,7 @@
 let g:coc_global_extensions = [
 \ 'coc-emmet',
 \ 'coc-css',
+\ 'coc-stylelint',
 \ 'coc-tailwindcss',
 \ 'coc-flow',
 \ 'coc-html',
@@ -8,6 +9,7 @@ let g:coc_global_extensions = [
 \ 'coc-eslint',
 \ 'coc-prettier',
 \ 'coc-explorer',
+\ 'coc-vimlsp',
 \ ]
 
 " Tool tip documentation and diagnostics 
