@@ -2,14 +2,14 @@ let g:coc_global_extensions = [
 \ 'coc-emmet',
 \ 'coc-css',
 \ 'coc-stylelint',
-\ 'coc-tailwindcss',
-\ 'coc-flow',
 \ 'coc-html',
 \ 'coc-tsserver',
 \ 'coc-eslint',
 \ 'coc-prettier',
 \ 'coc-explorer',
 \ 'coc-vimlsp',
+\ 'coc-json',
+\ 'coc-graphql',
 \ ]
 
 " Tool tip documentation and diagnostics 
