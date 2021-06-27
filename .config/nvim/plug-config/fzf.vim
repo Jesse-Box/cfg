@@ -1,5 +1,5 @@
 nnoremap <C-p> :FZF<CR>
-nnoremap <C-g> :Ag<CR>
+nnoremap <C-f> :Rg<CR>
 
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
@@ -7,4 +7,3 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
