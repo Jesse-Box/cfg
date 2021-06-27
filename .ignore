@@ -1,0 +1,18 @@
+.cfg
+.dropbox
+.DS_Store
+.local
+.npm
+.nvm
+.Trash
+
+Creative Cloud Files/
+Dropbox/
+Library/
+Music/
+Movies/
+node_modules/
+Pictures/
+
+package.json
+package-lock.json
